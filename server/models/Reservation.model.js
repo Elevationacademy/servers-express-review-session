@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const Shcema = mongoose.Schema
+const Schema = mongoose.Schema
 
 const reservationSchema = new Schema({
 
