@@ -5,7 +5,7 @@ const api = require('./server/routes/api')
 
 const app = express()
 
-mongoose.connect('mongodb://localhost:27017/reservations', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost:27017/reservations', { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
